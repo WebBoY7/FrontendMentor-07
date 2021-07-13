@@ -487,6 +487,7 @@ body{
         top 200ms;
         opacity: 0;
         z-index: -1;
+        pointer-events: none;
     }
     .product-sub-list-container-d:hover,
     .company-sub-list-container-d:hover,
