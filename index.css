@@ -166,25 +166,6 @@ body{
     font-size: 0.9rem;
     position: relative;
 }
-.sub-list-product>p>a::after,
-.sub-list-company>p>a::after,
-.sub-list-connect>p>a::after{
-    content: "";
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    display: block;
-    top: 100%;
-    background: var(--clr-very-dark-grayish-blue-bodyCopy);
-    transform-origin: center;
-    transform: scalex(0);
-    transition: 300ms;
-}
-.sub-list-product>p>a:hover::after,
-.sub-list-company>p>a:hover::after,
-.sub-list-connect>p>a:hover::after{
-    transform: scalex(1);
-}
 .login-container{
     border-top: 1px solid hsla(0,0%,0%,0.5);
     padding-top: 2rem;
