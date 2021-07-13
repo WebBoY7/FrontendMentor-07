@@ -372,22 +372,6 @@ body{
     font-family: var(--font-family-ubuntu);
     text-decoration: none;
     color: var(--clr-grayish-blue-footerText);
-    position: relative;
-}
-.footer-list>a::after{
-    content: "";
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    display: block;
-    top: 100%;
-    background: var(--clr-grayish-blue-footerText);
-    transform-origin: center;
-    transform: scalex(0);
-    transition: 300ms;
-}
-.footer-list>a:hover::after{
-    transform: scalex(1);
 }
 .footer-list-heading{
     color: var(--clr-white-text);
