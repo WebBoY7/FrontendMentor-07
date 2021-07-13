@@ -87,11 +87,13 @@ const productsubListD = document.querySelector(".product-sub-list-container-d");
 let isDroppedProductD = false;
 productMenuBtnD.addEventListener("click",()=>{
     if(!isDroppedProductD){
+        productsubListD.style.pointerEvents = "auto"
         productsubListD.style.opacity = "1";
         productArrowD.style.transform = "rotate(180deg)"
         productsubListD.style.top = "3rem"
         isDroppedProductD = true
     }else{
+        productsubListD.style.pointerEvents = "none"
         isDroppedProductD = false
         productsubListD.style.opacity = "0";
         productArrowD.style.transform = "rotate(0)"
@@ -105,12 +107,14 @@ const companySubListD = document.querySelector(".company-sub-list-container-d");
 let isDroppedCompanyD = false;
 companyMenuBtnD.addEventListener("click",()=>{
     if(!isDroppedCompanyD){
+        companySubListD.style.pointerEvents = "auto"
         companySubListD.style.opacity = "1";
         companyArrowD.style.transform = "rotate(180deg)"
         companySubListD.style.top = "3rem"
         isDroppedCompanyD  = true;
     }else{
         isDroppedCompanyD  = false;
+        companySubListD.style.pointerEvents = "none"
         companySubListD.style.opacity = "0";
         companyArrowD.style.transform = "rotate(0)"
         companySubListD.style.top = "0"
@@ -122,12 +126,14 @@ const connectSubListD = document.querySelector(".connect-sub-list-container-d");
 let isDroppedConnectD = false;
 connectMenuBtnD.addEventListener("click",()=>{
     if(!isDroppedConnectD){
+        connectSubListD.style.pointerEvents = "auto"
         connectSubListD.style.opacity = "1";
         connectArrowD.style.transform = "rotate(180deg)"
         connectSubListD.style.top = "3rem"
         isDroppedConnectD  = true;
     }else{
         isDroppedConnectD  = false;
+        connectSubListD.style.pointerEvents = "none"
         connectSubListD.style.opacity = "0";
         connectArrowD.style.transform = "rotate(0)"
         connectSubListD.style.top = "0"
